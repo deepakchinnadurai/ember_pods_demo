@@ -1,0 +1,14 @@
+{{#link-to  "input-task"}}
+    <button class="remove">Go back</button>
+{{/link-to}}
+{{!-- <button class="btn" {{action "get"}}>show</button><br> --}}
+<div class="output">
+{{#each this.task as |item|}}
+<input class="item" placeholder={{item}} id="new" >
+
+<button class="remove" {{action "update"}}>update</button>
+<button class="remove"  {{action "remove" item}}>completed</button>
+<br>
+{{/each}}
+</div>
+{{outlet}}

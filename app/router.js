@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('input-task' ,{path:'/'});
+  this.route('display-task',{path:'/task-list'});
 });
 
 export default Router;

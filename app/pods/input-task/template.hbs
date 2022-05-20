@@ -1,0 +1,13 @@
+
+<h1 class="header">Daily Task App </h1>
+<div class="box">
+
+{{input class = "input" id="ta" type="text" valueBinding="task" placeholder="enter the task"}}
+<button class="btn" {{action "save"}}>add</button>
+<br>
+{{#link-to  "display-task"}}
+    <button class="btn" {{action "up" }}>show task</button>
+{{/link-to}}
+</div>
+
+{{outlet}}
